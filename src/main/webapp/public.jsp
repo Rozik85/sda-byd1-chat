@@ -1,8 +1,5 @@
-<%@ page import="com.sdatwitter.service.MyTwitterService" %>
-<%@ page import="com.google.common.base.Strings" %>
-<%@ page import="com.sdatwitter.model.MyTweet" %>
-<%@ page import="com.sdatwitter.servlet.PublishServlet" %>
 
+<%@ page import="servlet.PublishServlet" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <%@ page contentType="text/html" pageEncoding="utf-8" %>
 

@@ -1,6 +1,5 @@
-<%@ page import="com.google.common.base.Strings" %>
-<%@ page import="com.sdatwitter.model.MyTweet" %>
-<%@ page import="com.sdatwitter.service.MyTwitterService" %>
+<%@ page import="com.sda.service.MyTwitterService" %>
+<%@ page import="com.sda.model.Tweet" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <%@ page contentType="text/html" pageEncoding="utf-8" %>
 
@@ -18,29 +17,15 @@
     <th width="300px">Message</th>
     </tr>
     <%
-        for (MyTweet tweet:service.getMyTweetList()){
+        for (Tweet tweet:service.getMyTweetList()){
             out.print("<tr>");
-            out.println("<td>"+ tweet.getAuthor()+"</td>");
+            out.println("<td>"+ tweet.getUser()+"</td>");
             out.println("<td>"+ tweet.getTime()+"</td>");
-            out.println("<td>"+ tweet.getTweet()+"</td>");
+            out.println("<td>"+ tweet.getMessage()+"</td>");
             out.print("</tr>");
         }
     %>
 </table>
-
-
-
-
-<%--<form action="/index.jsp" method="post">--%>
-<%--</form>--%>
-<%--<%--%>
-    <%--for (MyTweet Tweet : service.getMyTweetList()) {--%>
-        <%--out.println("Tweet Author: " + Tweet.getAuthor() + "<br>");--%>
-        <%--out.println("Tweet message: " + Tweet.getTweet() + "<br>");--%>
-        <%--out.println("Tweet time: " + Tweet.getTime() + "<br><br>");--%>
-    <%--}--%>
-<%--%>--%>
-
 
 </body>
 </html>
