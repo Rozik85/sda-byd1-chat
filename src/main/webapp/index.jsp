@@ -34,10 +34,10 @@
 <%--<form action="/index.jsp" method="post">--%>
 <%--</form>--%>
 <%--<%--%>
-    <%--for (MyTweet tweet : service.getMyTweetList()) {--%>
-        <%--out.println("Tweet Author: " + tweet.getAuthor() + "<br>");--%>
-        <%--out.println("Tweet message: " + tweet.getTweet() + "<br>");--%>
-        <%--out.println("Tweet time: " + tweet.getTime() + "<br><br>");--%>
+    <%--for (MyTweet Tweet : service.getMyTweetList()) {--%>
+        <%--out.println("Tweet Author: " + Tweet.getAuthor() + "<br>");--%>
+        <%--out.println("Tweet message: " + Tweet.getTweet() + "<br>");--%>
+        <%--out.println("Tweet time: " + Tweet.getTime() + "<br><br>");--%>
     <%--}--%>
 <%--%>--%>
 
